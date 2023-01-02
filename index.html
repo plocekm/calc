@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="icon" href="calculator.png" type="image/png">
+
+    <script src="app.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Wallpoet&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>calculator</h1>
+
+    <div class="main">
+
+        <table>
+            <tr>
+                <td colspan="3"><input type="numeric" class="screen" id="result"></td>
+                <td><input type="button" value="C" class="clear" onclick="clearInput()"></td>
+            </tr>
+        </table>
+
+        <div class="pad">
+            <input type="button" value="7" class="number" onclick="screen('7')">
+            <input type="button" value="8" class="number" onclick="screen('8')">
+            <input type="button" value="9" class="number" onclick="screen('9')">
+            <input type="button" value="/" class="operator" onclick="screen('/')">
+
+            <input type="button" value="4" class="number" onclick="screen('4')">
+            <input type="button" value="5" class="number" onclick="screen('5')">
+            <input type="button" value="6" class="number" onclick="screen('6')">
+            <input type="button" value="*" class="operator" onclick="screen('*')">
+
+            <input type="button" value="1" class="number" onclick="screen('1')">
+            <input type="button" value="2" class="number" onclick="screen('2')">
+            <input type="button" value="3" class="number" onclick="screen('3')">
+            <input type="button" value="-" class="operator" onclick="screen('-')">
+
+            <input type="button" value="0" class="number" onclick="screen('0')">
+            <input type="button" value="." class="operator" onclick="screen('.')">
+            <input type="button" value="+" class="operator" onclick="screen('+')">
+            <input type="button" value="=" class="operator result-btn" onclick="answer()">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

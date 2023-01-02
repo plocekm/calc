@@ -1,0 +1,124 @@
+:root{
+    --light-green: #DEDDCB;
+    --light-green-hover:#C6C5B5;
+    --medium-green:#BCCAB2;
+    --green: #93AB9F;
+    --green-hover: #768D82;
+    --dark: #4F474B;
+    --dark-hover:#342F32;
+    --pink: #DA5B94;
+    --pink-hover:#C45285;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+h1{
+    margin-top: -10%;
+    font-family: 'Space Mono', monospace;
+    color: var(--pink);
+}
+
+.main {
+    width: 460px;
+    height: 450px;
+    background-color: rgba(255,255,255,0.75);
+    box-shadow: 8px 8px 24px 0px rgba(79, 71, 75, 0.5);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    padding: 30px;
+}
+.pad {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin:auto;
+}
+
+.number {
+    height: 80px;
+    padding: 5px;
+    background-color: var(--green);
+    border-radius: 20px;
+    border: none;
+    font-size: 40px;
+    color: #333;
+    font-family: 'Wallpoet', cursive;
+    color: var(--dark);
+    box-shadow:3px 3px 10px #4F474B;
+
+
+}
+
+.clear{
+    font-family: 'Space Mono', monospace;
+    font-size: 25px;
+    background-color: var(--pink);
+    color: #fff;
+    width: 92px;
+    height: 40px; 
+    margin-left: 105%;
+    border: none;
+    border-radius: 10px;
+}
+
+.operator{
+    font-size: 40px;
+    font-family: 'Space Mono', monospace;
+    border-radius: 20px;
+    background-color: var(--dark);
+    border: none;
+    color: var(--light-green);
+    box-shadow:3px 3px 10px #4F474B;
+
+}
+
+.screen{
+    background-color:var(--green);
+    justify-content: left;
+    color: black;
+    font-size: large;
+    width: 120%;
+    height: 30%;
+    cursor: default;
+    padding: 10px; 
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    outline: none;
+}
+.number:hover{
+    background-color: var(--green-hover);
+    color: var(--dark-hover);
+    box-shadow:5px 5px 15px #4F474B;
+}
+
+.operator:hover{
+    background-color: var(--dark-hover);
+    box-shadow:5px 5px 15px #4F474B;
+    color: var(--light-green-hover);
+}
+
+.clear:hover{
+    background-color: var(--pink-hover);
+    color: #EFEFEF;
+    box-shadow:3px 3px 10px #4F474B;
+
+}
